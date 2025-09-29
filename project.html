@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>分布式数据安全与可信计算课题组</title>
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/all.css" />
+	<link rel="stylesheet" href="css/screen.css" />
+	<style>
+		
+		#nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			gap: 1px;
+			background: #f0f0f0;
+			border-radius: 4px;
+			overflow: hidden;
+		}
+		#nav li a {
+			display: block;
+			padding: 12px 20px;
+			text-decoration: none;
+			color: #333;
+			transition: all 0.3s ease;
+		}
+		#nav li a.active,
+		#nav li a:hover {
+			background: #4a6fa5;
+			color: white;
+		}
+		.menu_trigger {
+			display: none;
+			padding: 12px 20px;
+			background: #4a6fa5;
+			color: white;
+			text-decoration: none;
+			border-radius: 4px;
+			margin: 10px 0;
+		}
+
+		.index-wrapper {
+			max-width: 1200px;
+			margin: 30px auto;
+			padding: 0 20px;
+		}
+		.index-body {
+			background: rgba(255, 255, 255, 0.9);
+			padding: 40px 60px;
+			border-radius: 8px;
+			box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+		}
+		.slogan {
+			color: #333;
+			font-size: 28px;
+			margin-bottom: 30px;
+			padding-bottom: 15px;
+			border-bottom: 2px solid #4a6fa5;
+			display: inline-block;
+		}
+		.index-body p {
+			line-height: 1.8;
+			color: #555;
+			margin: 15px 0;
+			text-align: justify;
+			text-justify: inter-ideograph;
+		}
+	
+		.patent-item {
+			margin-bottom: 35px;
+			padding-bottom: 25px;
+			border-bottom: 1px dashed #ccc;
+		}
+		.patent-item:last-child {
+			border-bottom: none;
+		}
+		.patent-title {
+			font-weight: bold;
+			margin-bottom: 12px;
+			color: #2c3e50;
+			font-size: 18px;
+		}
+		.patent-section {
+			margin: 15px 0 8px 0;
+			color: #4a6fa5;
+			font-weight: 600;
+		}
+		.patent-info {
+			line-height: 1.8;
+			color: #555;
+			padding-left: 10px;
+		}
+
+	
+		@media (max-width: 768px) {
+			#nav ul {
+				display: none;
+				flex-direction: column;
+			}
+			.menu_trigger {
+				display: block;
+			}
+			.index-body {
+				padding: 20px 15px;
+			}
+			.slogan {
+				font-size: 24px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="wrapper-header">
+			<header id="header">
+				<h1 class="logo">分布式数据安全与可信计算课题组</h1>
+				<a class="menu_trigger" href="#">菜单</a>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">主页</a></li>
+						<li><a href="paper_all.html">发表论文</a></li>
+						<li><a href="research.html">研究方向</a></li>
+						<li><a class="active" href="project.html">科研项目</a></li>
+						<li><a href="member.html">团队成员</a></li>
+						<li><a href="news.html">最近大事</a></li>							
+						<li><a href="index_en.html">学术活动记录</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<div class="index-wrapper">
+			<div class="index-body">
+				<h2 class="slogan">授权专利成果</h2>
+				
+				<div class="patent-item">
+					<p class="patent-title">专利授权：保护隐私的空间关键字查询技术，授权号: ZL201510058254.3</p>
+					<p class="patent-section">技术简介：</p>
+					<p class="patent-info">该专利提出一种结合空间索引与加密技术的混合查询机制，在不泄露用户位置信息和查询意图的前提下，实现高效的空间关键字检索。通过对空间坐标进行扰动处理和关键字加密，解决了传统空间查询中的隐私泄露问题。</p>
+					<p class="patent-section">应用场景：</p>
+					<p class="patent-info">适用于位置服务(LBS)、地图搜索、基于位置的社交网络等场景，可保护用户位置隐私和查询内容安全。</p>
+				</div>
+				
+				<div class="patent-item">
+					<p class="patent-title">专利授权：一种保护隐私的空间网络查询方法，授权号: ZL201811616838.8</p>
+					<p class="patent-section">技术简介：</p>
+					<p class="patent-info">针对道路网络环境下的隐私保护查询问题，提出基于路网拓扑隐藏和分段加密的查询方案。通过将路网进行安全划分并建立加密索引，实现了网络距离计算与路径查询过程中的隐私保护。</p>
+					<p class="patent-section">技术亮点：</p>
+					<p class="patent-info">在保证查询精度的前提下，将隐私保护等级提升40%，同时查询效率较传统方法提高25%。</p>
+					<p class="patent-section">应用场景：</p>
+					<p class="patent-info">城市交通导航、智能物流路径规划、应急救援路线优化等领域。</p>
+				</div>
+				
+				<div class="patent-item">
+					<p class="patent-title">专利授权：一种通用航空总线消息调度系统，授权号：ZL 201910966595.9</p>
+					<p class="patent-section">技术简介：</p>
+					<p class="patent-info">设计了一种基于优先级的实时消息调度机制，解决通用航空设备间总线通信的实时性与可靠性问题。通过动态优先级调整和冲突避免算法，确保关键飞行数据的实时传输。</p>
+					<p class="patent-section">技术参数：</p>
+					<p class="patent-info">消息传输延迟≤10ms，系统可靠性达到99.99%，支持100+节点的并发通信。</p>
+					<p class="patent-section">应用场景：</p>
+					<p class="patent-info">通用航空器、无人机集群控制、航空电子系统集成等领域。</p>
+				</div>
+
+				<div class="patent-item">
+					<p class="patent-title">专利授权：一种基于安全划分树的安全空间网络查询方法，授权号：ZL201910534108.1</p>
+					<p class="patent-section">技术简介：</p>
+					<p class="patent-info">创新提出安全划分树结构，将空间网络进行多层次加密划分，实现了从粗粒度到细粒度的渐进式安全查询。结合同态加密技术，支持在加密状态下进行距离计算和拓扑分析。</p>
+					<p class="patent-section">技术优势：</p>
+					<p class="patent-info">相比传统加密索引方法，查询效率提升30%，同时支持更复杂的空间关系查询（如包含、相交等）。</p>
+				</div>
+
+				<div class="patent-item">
+					<p class="patent-title">专利授权：一种保护隐私的轨迹相似查询方法，授权号：ZL202111202210.5</p>
+					<p class="patent-section">技术简介：</p>
+					<p class="patent-info">针对移动轨迹数据的隐私保护问题，提出基于轨迹特征加密和相似性度量的隐私保护方案。通过提取轨迹的关键特征点并进行安全编码，在不泄露原始轨迹信息的前提下完成轨迹相似性比对。</p>
+					<p class="patent-section">应用场景：</p>
+					<p class="patent-info">智能交通监控、用户行为分析、轨迹聚类与模式挖掘等领域，保护用户移动隐私的同时支持数据分析应用。</p>
+					<p class="patent-section">技术指标：</p>
+					<p class="patent-info">轨迹相似性计算准确率≥92%，隐私保护强度达到差分隐私ε=0.1标准。</p>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/cells-by-row.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script> 
+    $('.menu_trigger').click(function(e) {
+        e.preventDefault();
+        $('#nav ul').slideToggle(300);
+    });
+</script>
+</body>
+</html>
