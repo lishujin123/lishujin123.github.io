@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>XX Group</title>
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/all.css" />
+	<link rel="stylesheet" href="css/screen.css" />
+	<style>
+		
+		#nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			gap: 1px;
+			background: #f0f0f0;
+			border-radius: 4px;
+			overflow: hidden;
+		}
+		#nav li a {
+			display: block;
+			padding: 12px 20px;
+			text-decoration: none;
+			color: #333;
+			transition: all 0.3s ease;
+		}
+		#nav li a.active,
+		#nav li a:hover {
+			background: #4a6fa5;
+			color: white;
+		}
+		.menu_trigger {
+			display: none;
+			padding: 12px 20px;
+			background: #4a6fa5;
+			color: white;
+			text-decoration: none;
+			border-radius: 4px;
+			margin: 10px 0;
+		}
+
+		
+		.index-wrapper {
+			max-width: 1200px;
+			margin: 30px auto;
+			padding: 0 20px;
+		}
+		.index-body {
+			background: rgba(255, 255, 255, 0.9);
+			padding: 40px 60px;
+			border-radius: 8px;
+			box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+		}
+		.slogan {
+			color: #333;
+			font-size: 28px;
+			margin-bottom: 30px;
+			padding-bottom: 15px;
+			border-bottom: 2px solid #4a6fa5;
+			display: inline-block;
+		}
+		.index-body p {
+			line-height: 1.8;
+			color: #555;
+			margin: 15px 0;
+			text-align: justify;
+			text-justify: inter-ideograph;
+		}
+		
+		
+		.patent-item {
+			margin-bottom: 35px;
+			padding-bottom: 25px;
+			border-bottom: 1px dashed #ccc;
+		}
+		.patent-item:last-child {
+			border-bottom: none;
+		}
+		.patent-title {
+			font-weight: bold;
+			margin-bottom: 12px;
+			color: #2c3e50;
+			font-size: 18px;
+		}
+		.patent-section {
+			margin: 15px 0 8px 0;
+			color: #4a6fa5;
+			font-weight: 600;
+		}
+		.patent-info {
+			line-height: 1.8;
+			color: #555;
+			padding-left: 10px;
+		}
+
+	
+		.member-body {
+			max-width: 1200px;
+			margin: 30px auto;
+			padding: 0 20px;
+		}
+		.member-section {
+			margin-bottom: 50px;
+		}
+		.member-section-title {
+			text-align: center;
+			color: #4a6fa5;
+			font-size: 22px;
+			margin: 20px 0 30px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #ddd;
+		}
+		.member-grid {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 30px;
+		}
+		.member-item-center {
+			text-align: center;
+			width: 180px;
+		}
+		.member-item-center img {
+			border-radius: 4px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
+		.member-item-center div {
+			margin-top: 10px;
+			line-height: 1.5;
+		}
+
+		@media (max-width: 768px) {
+			#nav ul {
+				display: none;
+				flex-direction: column;
+			}
+			.menu_trigger {
+				display: block;
+			}
+			.index-body {
+				padding: 20px 15px;
+			}
+			.slogan {
+				font-size: 24px;
+			}
+			.member-grid {
+				gap: 20px;
+			}
+			.member-item-center {
+				width: 140px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="wrapper-header">
+			<header id="header">
+			<h1 class="logo">分布式数据安全与可信计算课题组</h1>
+				<a class="menu_trigger" href="#">menu</a>
+				
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">主页</a></li>
+							<li><a href="paper_all.html">发表论文</a></li>
+							<li><a href="research.html">研究方向</a></li>
+							<li><a href="project.html">科研项目</a></li>
+							<li><a class="active" href="member.html">团队成员</a></li>
+							<li><a href="news.html">最近大事</a></li>							
+							<li><a href="index_en.html">学术活动记录</a></li>
+						</ul>
+					</nav>
+			</header>
+		</div>
+		
+		<div class="member-body">
+			<!-- 教师团队部分 -->
+			<div class="member-section">
+				<h2 class="member-section-title">教师团队</h2>
+				<div class="member-grid">
+					<div class="member-item-center">
+						<a href="https://ccf.org.cn/cmsFileManager//column/3445FAD02F0A3245770C4E0A341B62BD.jpg">
+						<img alt="沈阳航空航天大学-范纯龙" src="https://ccf.org.cn/cmsFileManager//column/3445FAD02F0A3245770C4E0A341B62BD.jpg" width="150" height="150"/>
+						</a>
+						<div>范纯龙：教授，硕导，学术带头人</div>
+					</div>
+					
+					<div class="member-item-center">
+						<a href="https://yjs.sau.edu.cn/__local/6/9F/BC/85D242A9A43E95658EA0F9FF6CD_F700235B_7287.jpg">
+						<img src="https://yjs.sau.edu.cn/__local/6/9F/BC/85D242A9A43E95658EA0F9FF6CD_F700235B_7287.jpg" width="150" height="150"/>
+						</a>
+						<div>滕一平：副教授，硕导，负责人</div>
+					</div>
+
+					<div class="member-item-center">
+						<img src="https://i.imgs.ovh/2025/09/28/75du1c.jpeg"  width="150" height="150"/>
+						<div>王刚：讲师，副负责人</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 学生团队部分 -->
+			<div class="member-section">
+				<h2 class="member-section-title">学生团队</h2>
+				<div class="member-grid">
+					<div class="member-item-center">
+						<img src="?.jpg" width="150" height="150"/>
+						<div>唐玉尧：硕士生</div>
+					</div>
+					
+					<div class="member-item-center">
+						<img src="?.jpg" width="150" height="150"/>
+						<div>于丙峰：硕士生</div>
+					</div>
+
+					<div class="member-item-center">
+						<img src="?.jpg" width="150" height="150"/>
+						<div>于甜甜：硕士生</div>
+					</div>
+					
+					<div class="member-item-center">
+						<img src="?.jpg" width="150" height="150"/>
+						<div>李昌泽：硕士生</div>
+					</div>
+					
+					<div class="member-item-center">
+						<img src="?.jpg" width="150" height="150"/>
+						<div>韩璐瑶：硕士生</div>
+					</div>
+
+					<div class="member-item-center">
+						<img src="???.jpg" width="150" height="150"/>
+						<div>张莹：硕士生</div>
+					</div>
+
+					<div class="member-item-center">
+						<img src="???.jpg" width="150" height="150"/>
+						<div>李欣月：硕士生</div>
+					</div>
+
+					<div class="member-item-center">
+						<img src="???.jpg" width="150" height="150"/>
+						<div>那瀛心：硕士生</div>
+					</div>
+
+					<div class="member-item-center">
+						<img src="???.jpg" width="150" height="150"/>
+						<div>李树金：硕士生</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/cells-by-row.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		
+		$('.menu_trigger').click(function(e) {
+			e.preventDefault();
+			$('#nav ul').slideToggle(300);
+		});
+	</script>
+</body>
+</html>
