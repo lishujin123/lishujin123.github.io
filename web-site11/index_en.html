@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>XX Group</title>
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/all.css" />
+	<link rel="stylesheet" href="css/screen.css" />
+	<style>
+		
+		#nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			gap: 1px;
+			background: #f0f0f0;
+			border-radius: 4px;
+			overflow: hidden;
+		}
+		#nav li a {
+			display: block;
+			padding: 12px 20px;
+			text-decoration: none;
+			color: #333;
+			transition: all 0.3s ease;
+		}
+		#nav li a.active,
+		#nav li a:hover {
+			background: #4a6fa5;
+			color: white;
+		}
+		.menu_trigger {
+			display: none;
+			padding: 12px 20px;
+			background: #4a6fa5;
+			color: white;
+			text-decoration: none;
+			border-radius: 4px;
+			margin: 10px 0;
+		}
+
+		
+		.index-wrapper {
+			max-width: 1200px;
+			margin: 30px auto;
+			padding: 0 20px;
+		}
+		.index-body {
+			background: rgba(255, 255, 255, 0.9);
+			padding: 40px 60px;
+			border-radius: 8px;
+			box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+		}
+		.slogan {
+			color: #333;
+			font-size: 28px;
+			margin-bottom: 30px;
+			padding-bottom: 15px;
+			border-bottom: 2px solid #4a6fa5;
+			display: inline-block;
+		}
+		.index-body p {
+			line-height: 1.8;
+			color: #555;
+			margin: 15px 0;
+			text-align: justify;
+			text-justify: inter-ideograph;
+		}
+		
+		/* 学术活动图片区域样式 */
+		.activity-section {
+			margin: 40px 0;
+		}
+		.activity-title {
+			color: #2c3e50;
+			font-size: 24px;
+			margin-bottom: 25px;
+			padding-left: 10px;
+			border-left: 4px solid #4a6fa5;
+		}
+		.activity-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+			gap: 30px;
+			margin-top: 20px;
+		}
+		.activity-item {
+			background: #fff;
+			border-radius: 8px;
+			overflow: hidden;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+			transition: transform 0.3s ease;
+		}
+		.activity-item:hover {
+			transform: translateY(-5px);
+		}
+		.activity-image {
+			width: 100%;
+			height: 250px;
+			object-fit: cover;
+			display: block;
+		}
+		.activity-info {
+			padding: 20px;
+		}
+		.activity-name {
+			font-weight: bold;
+			color: #2c3e50;
+			margin-bottom: 10px;
+			font-size: 18px;
+		}
+		.activity-desc {
+			color: #555;
+			line-height: 1.6;
+			font-size: 14px;
+		}
+		
+		
+		.patent-item {
+			margin-bottom: 35px;
+			padding-bottom: 25px;
+			border-bottom: 1px dashed #ccc;
+		}
+		.patent-item:last-child {
+			border-bottom: none;
+		}
+		.patent-title {
+			font-weight: bold;
+			margin-bottom: 12px;
+			color: #2c3e50;
+			font-size: 18px;
+		}
+		.patent-section {
+			margin: 15px 0 8px 0;
+			color: #4a6fa5;
+			font-weight: 600;
+		}
+		.patent-info {
+			line-height: 1.8;
+			color: #555;
+			padding-left: 10px;
+		}
+
+	
+		@media (max-width: 768px) {
+			#nav ul {
+				display: none;
+				flex-direction: column;
+			}
+			.menu_trigger {
+				display: block;
+			}
+			.index-body {
+				padding: 20px 15px;
+			}
+			.slogan {
+				font-size: 24px;
+			}
+			.activity-container {
+				grid-template-columns: 1fr;
+			}
+			.activity-image {
+				height: 200px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="wrapper-header">
+		
+			<header id="header">
+			<h1 class="logo">分布式数据安全与可信计算课题组</h1>
+				<a class="menu_trigger" href="#">menu</a>
+				
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">主页</a></li>
+							<li><a href="paper_all.html">发表论文</a></li>
+							<li><a href="research.html">研究方向</a></li>
+							<li><a href="project.html">科研项目</a></li>
+							<li><a href="member.html">团队成员</a></li>
+							<li><a href="news.html">最近大事</a></li>							
+							<li><a class="active" href="index_en.html">学术活动记录</a></li>
+						</ul>
+					</nav>
+				
+			</header>
+		</div>
+		
+		<div class="index-wrapper">
+			<div class="index-body">
+				<h2 class="slogan">学术活动记录</h2>
+				
+				<div class="activity-section">
+					<h3 class="activity-title">第42届CCF中国数据库学术会议 (NDBC 2025)</h3>
+					<div class="activity-container">
+						<div class="activity-item">
+							<img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/316c64b699e7467b9540b6b9ce8ee104.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=20250929084236C897D58CE2983B4C1FFE&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1759711356&x-signature=SyZmDIB8eCDfxAp%2BS4RNMUkzg1s%3D" 
+								 class="activity-image" 
+								 alt="第42届CCF中国数据库学术会议团队合影">
+							<div class="activity-info">
+								<div class="activity-name">团队成员参加第42届CCF中国数据库学术会议</div>
+								<div class="activity-desc">
+									2025年8月，团队成员参加了在吉林省长春市举办的第42届CCF中国数据库学术会议（NDBC 2025）。此次会议由中国计算机学会（CCF）主办，吉林大学承办，是国内数据库领域的重要学术会议。
+								</div>
+							</div>
+						</div>
+						
+						<div class="activity-item">
+							<img src="https://p26-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/d47bd2899aa5424898d67fa76926fdc2.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025092908495689B4A1ABEA4EFCB2C460&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1759711797&x-signature=ZlEYlHXIlfBid9bUM0ffU3dNAOw%3D" 
+								 class="activity-image" 
+								 alt="会议现场照片">
+							<div class="activity-info">
+								<div class="activity-name">NDBC 2025会议现场</div>
+								<div class="activity-desc">
+									会议期间，团队成员与来自全国各地的数据库领域专家学者进行了深入交流，分享了最新研究成果，并就分布式数据安全与可信计算领域的前沿问题展开了热烈讨论。
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 添加学术记录 -->
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/cells-by-row.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+    $('.menu_trigger').click(function(e) {
+        e.preventDefault();
+        $('#nav ul').slideToggle(300);
+    });
+</script>
+</body>
+</html>

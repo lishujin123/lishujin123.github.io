@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>分布式数据安全与可信计算课题组</title>
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/all.css" />
+	<link rel="stylesheet" href="css/screen.css" />
+	<style>
+		
+		#nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			gap: 1px;
+			background: #f0f0f0;
+			border-radius: 4px;
+			overflow: hidden;
+		}
+		#nav li a {
+			display: block;
+			padding: 12px 20px;
+			text-decoration: none;
+			color: #333;
+			transition: all 0.3s ease;
+		}
+		#nav li a.active,
+		#nav li a:hover {
+			background: #4a6fa5;
+			color: white;
+		}
+		.menu_trigger {
+			display: none;
+			padding: 12px 20px;
+			background: #4a6fa5;
+			color: white;
+			text-decoration: none;
+			border-radius: 4px;
+			margin: 10px 0;
+		}
+
+		
+		.index-wrapper {
+			max-width: 1200px;
+			margin: 30px auto;
+			padding: 0 20px;
+		}
+		.index-body {
+			background: rgba(255, 255, 255, 0.9);
+			padding: 40px 60px;
+			border-radius: 8px;
+			box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+		}
+		.group-photo {
+			width: 100%;
+			max-width: 1000px;
+			margin: 0 auto 30px;
+			border-radius: 6px;
+			overflow: hidden;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+		}
+		.group-photo img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		.photo-caption {
+			text-align: center;
+			color: #666;
+			font-size: 14px;
+			padding: 8px 0;
+			background: #f9f9f9;
+			border-top: 1px solid #eee;
+		}
+		.slogan {
+			color: #333;
+			font-size: 28px;
+			margin-bottom: 30px;
+			padding-bottom: 15px;
+			border-bottom: 2px solid #4a6fa5;
+			display: inline-block;
+		}
+		.index-body p {
+			line-height: 1.8;
+			color: #555;
+			margin: 15px 0;
+			text-align: justify;
+			text-justify: inter-ideograph;
+		}
+		.index-body p:first-of-type {
+			font-size: 18px;
+			color: #333;
+			font-weight: 500;
+		}
+
+		
+		.recruitment {
+			margin-top: 30px;
+			padding: 25px;
+			background: #f8f9fa;
+			border-radius: 6px;
+			border-left: 4px solid #4a6fa5;
+		}
+		.recruitment-title {
+			font-size: 20px;
+			color: #333;
+			margin-bottom: 15px;
+			font-weight: bold;
+		}
+		.recruitment ul {
+			padding-left: 20px;
+			margin: 10px 0;
+		}
+		.recruitment li {
+			line-height: 1.8;
+			color: #555;
+			margin: 8px 0;
+		}
+		.contact-email {
+			color: #4a6fa5;
+			font-weight: 500;
+			text-decoration: underline;
+		}
+
+		
+		@media (max-width: 768px) {
+			#nav ul {
+				display: none;
+				flex-direction: column;
+			}
+			.menu_trigger {
+				display: block;
+			}
+			.index-body {
+				padding: 20px 15px;
+			}
+			.slogan {
+				font-size: 24px;
+			}
+			.group-photo {
+				margin-bottom: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="wrapper-header">
+			<header id="header">
+				<h1 class="logo">分布式数据安全与可信计算课题组</h1>
+				<a class="menu_trigger" href="#">菜单</a>
+				<nav id="nav">
+					<ul>
+						<li><a class="active" href="index.html">主页</a></li>
+						<li><a href="paper_all.html">发表论文</a></li>
+						<li><a href="research.html">研究方向</a></li>
+						<li><a href="project.html">科研项目</a></li>
+						<li><a href="member.html">团队成员</a></li>
+						<li><a href="news.html">最近大事</a></li>							
+						<li><a href="index_en.html">学术活动记录</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<div class="index-wrapper">
+			<div class="index-body">
+				
+				<div class="group-photo">
+					<img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/316c64b699e7467b9540b6b9ce8ee104.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=20250929084236C897D58CE2983B4C1FFE&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1759711356&x-signature=SyZmDIB8eCDfxAp%2BS4RNMUkzg1s%3D" 
+						 alt="课题组参加2025年APWeb-WAIM国际会议合影">
+					<div class="photo-caption">课题组参加2025年APWeb-WAIM国际会议合影（9th APWeb-WAIM Joint International Conference on Web and Big Data）</div>
+				</div>
+				
+				<h2 class="slogan">课题组介绍</h2>
+				<p>培养精英人才，探索顶尖学术，跻身世界一流</p>
+				<p>本课题组隶属于并行与分布式系统研究所，聚焦分布式数据安全与可信计算领域的前沿研究，致力于解决数据流通中的隐私保护、计算可信性及系统高效性等核心科学问题。团队以"理论创新驱动技术突破，技术突破赋能产业升级"为理念，在学术研究与产业应用中形成了鲜明特色。</p>
+				<p>研究方向涵盖隐私计算（同态加密、安全多方计算、联邦学习）、分布式机器学习系统、云计算及边缘计算安全、教育数据隐私保护等，在理论创新与产业应用中形成了特色优势。</p>
+				<p>团队近五年在IEEE TPDS等国内外顶级期刊和会议发表论文20余篇，承担省市级项目10余项，获省部级科技奖励3项。研究成果被应用于金融风控、医疗数据共享、智慧教育等领域，产生了显著的社会价值。</p>
+				<p>课题组注重人才培养，已培养硕士毕业生30余人，其中多人赴北京邮电大学等高校深造，或知名企业及科研机构，成为行业骨干力量。团队学术氛围浓厚，定期举办组会研讨、学术沙龙，并与国内外顶尖团队保持密切交流合作。</p>
+				<p>与国内外多所顶尖高校建立了深度合作，推动多项技术成果落地转化。</p>
+
+				<div class="recruitment">
+					<div class="recruitment-title">招聘信息</div>
+					<p>本课题组常年招收计算机科学与技术、信息安全、软件工程等相关专业的博士研究生、硕士研究生及科研助理，欢迎对以下方向感兴趣的同学加入：</p>
+					<ul>
+						<li>具备扎实的数学基础（密码学、概率论、线性代数等）或计算机系统功底（操作系统、分布式系统）；</li>
+						<li>对隐私计算、机器学习系统、数据安全等领域有浓厚研究兴趣，有相关项目或论文经验者优先；</li>
+						<li>具备良好的编程能力（C/C++、Python）及英文文献阅读与写作能力；</li>
+						<li>具有团队协作精神和独立科研能力，对学术研究有热情和毅力。</li>
+					</ul>
+					<p>有意者请将个人简历（含学习工作经历、科研成果、项目经验）发送至：<span class="contact-email"></span>，邮件主题注明"应聘-姓名-专业"。我们将尽快筛选并安排面试。</p>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/cells-by-row.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		
+		$('.menu_trigger').click(function(e) {
+			e.preventDefault();
+			$('#nav ul').slideToggle(300);
+		});
+	</script>
+</body>
+</html>
